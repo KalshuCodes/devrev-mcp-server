@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "devrev": {
+      "url":"localhost:8888/sse",
+      "env": {
+        "DEVREV_API_KEY": "<Add your Key here>",
+        "DEVREV_MCP_HOST": "127.0.0.1",
+        "DEVREV_MCP_PORT": "8888",
+        "DEVREV_MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}

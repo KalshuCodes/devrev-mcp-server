@@ -1,0 +1,13 @@
+build
+dist
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+venv
+__pycache__
+*.log
+tmp/
+src/devrev_mcp.egg-info/
+=0.2.0

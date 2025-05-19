@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devrev_mcp"
+version = "0.1.0"
+authors = [
+    {name = "DevRev Team", email = "support@devrev.ai"},
+]
+description = "Model Context Protocol server for DevRev"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn>=0.21.1",
+    "httpx>=0.24.0",
+    "pydantic>=1.10.7",
+    "fastmcp>=0.2.0",
+    "requests>=2.28.0"
+]
+
+[project.scripts]
+devrev-mcp = "devrev_mcp.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/devrev/devrev-mcp"
+"Bug Tracker" = "https://github.com/devrev/devrev-mcp/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["devrev_mcp*"] 
